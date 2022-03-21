@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cfoual4ayggwi"]
+
+[ext_resource type="Script" path="res://Refractor.gd" id="1_hbbmg"]
+
+[node name="Refractor" type="Area2D"]
+script = ExtResource( "1_hbbmg" )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-1, -1, 1, -1, 1, 1, -1, 1)
+disabled = true

@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://cuc5sb65ll41f"]
+
+[ext_resource type="PackedScene" uid="uid://dum78f1nmsg4w" path="res://photon.tscn" id="1_7bl3g"]
+[ext_resource type="PackedScene" uid="uid://cfoual4ayggwi" path="res://refractor.tscn" id="2_2asfp"]
+
+[node name="World" type="Node2D"]
+
+[node name="Photon" parent="." instance=ExtResource( "1_7bl3g" )]
+position = Vector2(0, 300)
+rotation = 1.5708
+
+[node name="Refractor" parent="." instance=ExtResource( "2_2asfp" )]
+position = Vector2(512, 300)
+rotation = 0.523599
+scale = Vector2(130, 130)
+
+[node name="Refractor2" parent="." instance=ExtResource( "2_2asfp" )]
+position = Vector2(1044, 300)
+scale = Vector2(20, 300)
+refractive_index = inf
